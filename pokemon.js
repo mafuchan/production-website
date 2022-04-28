@@ -1,5 +1,6 @@
-const url = "https://pokeapi.co/api/v2/pokemon/54"
+const url = "https://pokeapi.co/api/v2/pokemon?limit=2&offset=53"
 const main = document.querySelector("main")
+const spinner = document.querySelector(".spinner")
 
 function addPokemonImage(pokemon) {
     const div = document.createElement("div")
@@ -13,7 +14,6 @@ function addPokemonImage(pokemon) {
     main.append(div)
 }
 
-
 fetch(url)
     .then(response => {
         return response.json()
@@ -21,4 +21,9 @@ fetch(url)
         const urls = parsedResponse.results.map(result => result.url)
         const fetches = urls.map(url => fetch(url).then(response => response.json()))
         return Promise.all(fetches)
+    }).then(responses => {
+        responses.forEach(response => {
+            spinner.classList.add("hidden")
+            addPokemonImage(response)
+        })
     })
