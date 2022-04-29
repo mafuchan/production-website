@@ -7,8 +7,8 @@ function addPokemonImage(pokemon) {
     const titleName = `${pokemon.name[0].toUpperCase()}${pokemon.name.slice(1)}`
     div.innerHTML = `
     <figure>
-        <img src="${pokemon.sprites.front_default}" alt="${pokemon.name}" />
-        <figcaption><a href="pokemon.html?pokemon=${pokemon.name}">${titleName}</a></figcaption>
+        <img src="${pokemon.sprites.other.dream_world.front_default}" alt="${pokemon.name}" />
+        <figcaption><a href="pokemon_detail.html?pokemon=${pokemon.name}">${titleName}</a></figcaption>
     </figure>
     `
     main.append(div)
