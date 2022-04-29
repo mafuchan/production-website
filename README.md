@@ -5,8 +5,8 @@ Form data is included on the landing page to obtain a name and email address and
 URL: http://crecraftdigital.com
 
 Screenshots
-![ScreenShot](images.screenshot1.png)
-![ScreenShot](images.screenshot2.png)
+![ScreenShot](images/screenshot1.png)
+![ScreenShot](images/screenshot2.png)
 
 
 
