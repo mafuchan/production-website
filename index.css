@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
 html,
 body,
@@ -138,8 +139,7 @@ table {
 /*Begin here*/
 
 .nav {
-    font-family: 'Lato',
-    sans-serif;
+    font-family: 'Itim', cursive;
     font-size: 1.5em;
     display: inline-block;
     justify-content: space-between;
@@ -150,26 +150,46 @@ table {
     text-decoration: none;
 }
 
-h1 {
-    font-family: 'Lato',
-    sans-serif;
-    text-align: center;
-    font-size: 5em;
+a:link {
+    text-decoration: none;
 }
 
+@media (max-width: 700px) {
+    .nav {
+    font-family: 'Itim', cursive;
+    font-size: 1.5em;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 7px;
+    color: black;
+    margin-left: 18px;
+    text-decoration: none;
+}}
+
 h2 {
-    font-family: 'Lato',
-    sans-serif;
+    font-family: 'Itim',
+    cursive;
     text-align: center;
     font-size: 3em;
     text-shadow: -3px 1px white;
 }
 
+@media (max-width: 700px) {
+    h2 {
+    font-family: 'Itim',
+    cursive;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: -3px 1px white;
+}}
+
 body {
+    font-family: 'Lato',
+    sans-serif;
     background-image: linear-gradient(to right, #F9C148, white);
     padding-bottom: 50px;
     text-align: center;
-
 }
 
 main {
@@ -180,25 +200,27 @@ main {
     line-height: 3em;
     display: inline-block;
 }
+
+@media (max-width: 700px) {
+    main {
+    padding-top: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2em;
+    line-height: 3em;
+    display: inline-block;
+}}
+
 div {
     display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2em;
 }
-
-/* @media (max-width: 700px) {
-    main {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: .5em;
-        padding-right: .5em;
-        width: 90%;
-        flex-wrap: wrap;
-    } */
 
 #summary {
     text-align: center;
     display: block;
-
 }
 
 header>img {
@@ -215,6 +237,11 @@ main>img {
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0 0 10px 8px white;
+}
+
+ul {
+    list-style: none;
+    color: black;
 }
 
 .spinner {
