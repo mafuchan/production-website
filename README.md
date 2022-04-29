@@ -1,3 +1,16 @@
+After many failures, this site was developed to shocase my disdain for Pokemon, yet at the same time, my love for Psyduck.
+The site is connected to PokeAPI and pulls information and images for Psyduck and his evolution Golduck specifically. While the previous Pokemon project pulled a list of abilities, this one shocases their moves.
+Form data is included on the landing page to obtain a name and email address and what the visitor's favorite Pokemon is.
+
+URL: http://crecraftdigital.com
+
+Screenshots
+![ScreenShot](images.screenshot1.png)
+![ScreenShot](images.screenshot2.png)
+
+
+
+
 # Production Website
 
 ## Features
